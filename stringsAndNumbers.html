@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <script src="javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="outputText"></p>
+
+
+
+<Script>
+
+ var text1 = "seven";
+ var text2 = "7";
+
+ var num1 = stringToNumber(text1);
+ var num2 = stringToNumber(text2);
+
+
+if(isNaN(num1) || isNaN(num2)) {
+    document.getElementById("outputText").innerHTML = " not valid. please try again.";
+} else {
+
+ document.getElementById("outputText").innerHTML = num1 / num2;
+
+}
+ function stringToNumber(text) {
+return parseInt(text);
+
+ }
+
+
+</Script>
+
+
+
+</body>
+</html>
