@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <script src="javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Login</h2>
+
+
+<form id="loginForm">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Passwword:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <input type="submit" value="Login">
+
+</form>
+
+
+<p id="message"></p>
+
+
+<script>
+
+document.getElementById("loginForm").addEventListener("submit",
+function(event) {
+event.preventDefault();
+
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+
+var systemUsername = "moni";
+var systemPassword = "1992";
+
+if(username === systemUsername && password === systemPassword) {
+document.getElementById("message").innerText = "correct... logging you in.";
+} else {
+document.getElementById("message").innerText = "Incorrect username or password.";
+
+}
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
