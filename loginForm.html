@@ -9,17 +9,18 @@
 </head>
 <body>
 
+<form id="loginForm">
+    
     <h2>Login</h2>
 
-
-<form id="loginForm">
     <label for="username">Username:</label><br>
     <input type="text" id="username" name="username" required><br><br>
-
     <label for="password">Passwword:</label><br>
     <input type="password" id="password" name="password" required><br><br>
-    
     <input type="submit" value="Login">
+    <p><a href="forgotPassword.html" id="forgotBtn">Forgot password?</a></p>
+    <p>Dont you have an account?<a href="register.html" id="createBtn">Create Account</a></p>
+
 
 </form>
 
@@ -47,6 +48,21 @@ document.getElementById("message").innerText = "Incorrect username or password."
 }
 
 });
+
+
+// create an account
+
+document.getElementById('createBtn').addEventListener('click', function(){
+window.location.href="register.html";
+
+
+// redirecting to sign up page
+
+alert('redirecting to signup page');
+
+});
+
+
 
 
 </script>
